@@ -47,15 +47,15 @@ for i in ct:
     for p4 in m:
         pr.append(eval(p4.text.replace('¥','').replace('\xa0起','')))
 print('>>>提取完毕，开始储存')
-with open('C:/Users/LiSunBowen/Desktop/商业数据可视化/data.txt','w') as f:
+with open('data.txt','w') as f:
     f.write(str(txt))
-with open('C:/Users/LiSunBowen/Desktop/商业数据可视化/hot.txt','w') as f1:
+with open('hot.txt','w') as f1:
     f1.write(str(hot))
-with open('C:/Users/LiSunBowen/Desktop/商业数据可视化/place.txt','w') as f2:
+with open('place.txt','w') as f2:
     f2.write(str(pl))
-with open('C:/Users/LiSunBowen/Desktop/商业数据可视化/price.txt','w') as f3:
+with open('price.txt','w') as f3:
     f3.write(str(pr))
-print('>>>储存完毕,储存位置：C:/Users/LiSunBowen/Desktop/商业数据可视化，储存数据量:\
+print('>>>储存完毕,储存位置：程序源码相同目录，储存数据量:\
       2*{},爬虫结束<<<'.format(len(txt)))
 #爬虫部分结束
 
