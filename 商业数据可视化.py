@@ -202,3 +202,13 @@ plt.bar(lo, hot1, ec='g',ls='-',color=['r','coral','orange','lightgreen','c'\
                                            ,'skyblue','slategray','lightsteelblue'])
 plt.title('欢乐谷类型景点月销量')
 plt.show()
+
+plt.figure(5)
+sale = []
+for i in range(len(hot1)):
+    sale.append(hot1[i]*pri[i])
+plt.xticks(rotation=30)
+plt.bar(lo,sale,color=['r','coral','orange','lightgreen','c'\
+                                           ,'skyblue','slategray','lightsteelblue'])
+plt.title('月销售额')
+plt.show()
